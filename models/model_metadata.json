@@ -1,0 +1,164 @@
+{
+  "model_version": "1.1.0",
+  "model_name": "XGBoost",
+  "model_architecture": "XGBClassifier",
+  "is_calibrated": true,
+  "calibration_method": "sigmoid",
+  "training_timestamp_utc": "2026-11-10T13:35:32.183544+00:00",
+  "random_seed": 42,
+  "feature_names": [
+    "attendance_pct",
+    "assignment_completion_pct",
+    "late_assignment_count",
+    "previous_score",
+    "previous_score_2",
+    "previous_score_avg",
+    "score_trend",
+    "assessment_period"
+  ],
+  "derived_feature_rule": "previous_score_avg = rolling mean of (previous_score, previous_score_2) with single-score fallback to previous_score; score_trend = previous_score - previous_score_2 (0.0 if previous_score_2 is missing).",
+  "target_definition": "1 if next assessment score < 40 else 0",
+  "selected_threshold": 0.18,
+  "threshold_optimization_rationale": "Threshold 0.18 was selected strictly on the validation selection fold (N=1250) to maximize F2 safety-net score (0.820) subject to precision >= 0.55. It achieved 90.8% recall, 59.1% precision, and 85.2% specificity.",
+  "selection_rationale": "XGBoost was selected programmatically as champion via composite validation score (0.8818 = 0.35*MeanAP + 0.25*MeanROCAUC + 0.25*ValOptF2 + 0.15*(1-MeanBrier)) over non-dummy candidates evaluated exclusively on validation selection folds (Temp AP=0.852, Disjoint AP=0.860, Mean Brier=0.0701).",
+  "selection_formula": "0.35 * Mean_AP + 0.25 * Mean_ROC_AUC + 0.25 * Temporal_Val_Opt_F2 + 0.15 * (1 - Mean_Brier)",
+  "candidate_selection_scores": {
+    "LogisticRegression": {
+      "mean_average_precision": 0.8439,
+      "mean_roc_auc": 0.9476,
+      "temporal_val_optimized_f2": 0.8183,
+      "mean_brier_score": 0.0696,
+      "composite_score": 0.8764
+    },
+    "RandomForestClassifier": {
+      "mean_average_precision": 0.8474,
+      "mean_roc_auc": 0.9501,
+      "temporal_val_optimized_f2": 0.8141,
+      "mean_brier_score": 0.0743,
+      "composite_score": 0.8765
+    },
+    "XGBoost": {
+      "mean_average_precision": 0.8557,
+      "mean_roc_auc": 0.9512,
+      "temporal_val_optimized_f2": 0.8201,
+      "mean_brier_score": 0.0701,
+      "composite_score": 0.8818
+    }
+  },
+  "validation_metrics": {
+    "threshold": 0.18,
+    "accuracy": 0.8624,
+    "precision": 0.5913,
+    "recall": 0.9079,
+    "specificity": 0.8516,
+    "f1_score": 0.7162,
+    "f2_score": 0.8201,
+    "average_precision": 0.8515,
+    "pr_auc": 0.8511,
+    "roc_auc": 0.9538,
+    "brier_score": 0.0676,
+    "confusion_matrix": {
+      "true_negatives": 861,
+      "false_positives": 150,
+      "false_negatives": 22,
+      "true_positives": 217
+    },
+    "sample_size": 1250,
+    "positive_rate": 0.1912
+  },
+  "final_test_metrics_temporal": {
+    "threshold": 0.18,
+    "accuracy": 0.8544,
+    "precision": 0.5221,
+    "recall": 0.8985,
+    "specificity": 0.8462,
+    "f1_score": 0.6604,
+    "f2_score": 0.7853,
+    "average_precision": 0.8064,
+    "pr_auc": 0.8062,
+    "roc_auc": 0.942,
+    "brier_score": 0.0677,
+    "confusion_matrix": {
+      "true_negatives": 1782,
+      "false_positives": 324,
+      "false_negatives": 40,
+      "true_positives": 354
+    },
+    "sample_size": 2500,
+    "positive_rate": 0.1576
+  },
+  "final_test_metrics_disjoint": {
+    "threshold": 0.18,
+    "accuracy": 0.8853,
+    "precision": 0.6887,
+    "recall": 0.8286,
+    "specificity": 0.9004,
+    "f1_score": 0.7522,
+    "f2_score": 0.7962,
+    "average_precision": 0.8384,
+    "pr_auc": 0.838,
+    "roc_auc": 0.9448,
+    "brier_score": 0.0723,
+    "confusion_matrix": {
+      "true_negatives": 1067,
+      "false_positives": 118,
+      "false_negatives": 54,
+      "true_positives": 261
+    },
+    "sample_size": 1500,
+    "positive_rate": 0.21
+  },
+  "calibration_summary": {
+    "method": "sigmoid",
+    "temporal_val_brier_before": 0.0884,
+    "temporal_val_brier_after": 0.0676,
+    "disjoint_val_brier_before": 0.0704,
+    "disjoint_val_brier_after": 0.0727,
+    "temporal_test_brier_before": 0.0959,
+    "temporal_test_brier_after": 0.0677,
+    "temporal_test_ece_after": 0.0427
+  },
+  "split_sizes": {
+    "temporal_train_rows": 5000,
+    "temporal_val_cal_rows": 1250,
+    "temporal_val_sel_rows": 1250,
+    "temporal_test_rows": 2500,
+    "disjoint_train_rows": 7000,
+    "disjoint_val_cal_rows": 748,
+    "disjoint_val_sel_rows": 752,
+    "disjoint_test_rows": 1500
+  },
+  "data_generator_parameters": {
+    "num_students": 2500,
+    "num_periods": 5,
+    "total_snapshots": 10000,
+    "random_seed": 42
+  },
+  "environment_versions": {
+    "python": "3.11.5",
+    "scikit_learn": "1.7.2",
+    "xgboost": "3.2.0",
+    "shap": "0.51.0",
+    "pandas": "2.2.3",
+    "numpy": "2.2.1",
+    "joblib": "1.5.2"
+  },
+  "risk_categories": {
+    "LOW_RISK": {
+      "label": "Low Risk",
+      "description": "Student trajectory suggests strong likelihood of reaching assessment benchmarks (>= 40). Continue standard classroom engagement.",
+      "color": "#10B981"
+    },
+    "MODERATE_RISK": {
+      "label": "Moderate Risk",
+      "description": "Student trajectory demonstrates emerging instability (e.g., lower assignment completion or declining trend). Recommend light teacher check-in.",
+      "color": "#F59E0B"
+    },
+    "HIGH_RISK": {
+      "label": "High Risk / Priority Advisory",
+      "description": "Student trajectory indicates elevated risk of scoring below 40. Timely teacher review, mentoring check-in, or study support recommended.",
+      "color": "#EF4444"
+    }
+  },
+  "disclaimer": "EduGuard AI is strictly an advisory school intelligence tool designed to help teachers and academic coordinators identify students who may benefit from support. Model probabilities and SHAP attributions represent statistical associations observed in synthetic historical cohorts, NOT certainties, causal proof, or real-world verified guarantees. EduGuard AI outputs MUST NEVER be used to automatically assign grades, penalize students, restrict enrollment, or replace professional teacher judgment."
+}

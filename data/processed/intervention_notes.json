@@ -1,0 +1,167 @@
+{
+  "STU_01326": {
+    "student_id": "STU_01326",
+    "assessment_period": 4,
+    "risk_probability": 0.8477,
+    "priority": "Urgent",
+    "recommended_support": "Holistic Academic Coordinator Check-in: Calibrated risk (84.8%) exceeds the operational alert threshold (18%) with multiple academic signals. Recommend a collaborative teacher-student mentoring plan.",
+    "status": "Pending Review",
+    "teacher_notes": "",
+    "source": "rule_based_advisory",
+    "updated_at_utc": "2026-11-10T13:39:20.523400+00:00"
+  },
+  "STU_00439": {
+    "student_id": "STU_00439",
+    "assessment_period": 4,
+    "risk_probability": 0.8476,
+    "priority": "Urgent",
+    "recommended_support": "Holistic Academic Coordinator Check-in: Calibrated risk (84.8%) exceeds the operational alert threshold (18%) with multiple academic signals. Recommend a collaborative teacher-student mentoring plan.",
+    "status": "Pending Review",
+    "teacher_notes": "",
+    "source": "rule_based_advisory",
+    "updated_at_utc": "2026-11-10T13:39:20.523400+00:00"
+  },
+  "STU_01595": {
+    "student_id": "STU_01595",
+    "assessment_period": 4,
+    "risk_probability": 0.8472,
+    "priority": "Urgent",
+    "recommended_support": "Holistic Academic Coordinator Check-in: Calibrated risk (84.7%) exceeds the operational alert threshold (18%) with multiple academic signals. Recommend a collaborative teacher-student mentoring plan.",
+    "status": "Pending Review",
+    "teacher_notes": "",
+    "source": "rule_based_advisory",
+    "updated_at_utc": "2026-11-10T13:39:20.523400+00:00"
+  },
+  "STU_01694": {
+    "student_id": "STU_01694",
+    "assessment_period": 4,
+    "risk_probability": 0.8471,
+    "priority": "Urgent",
+    "recommended_support": "Holistic Academic Coordinator Check-in: Calibrated risk (84.7%) exceeds the operational alert threshold (18%) with multiple academic signals. Recommend a collaborative teacher-student mentoring plan.",
+    "status": "Pending Review",
+    "teacher_notes": "",
+    "source": "rule_based_advisory",
+    "updated_at_utc": "2026-11-10T13:39:20.523400+00:00"
+  },
+  "STU_00734": {
+    "student_id": "STU_00734",
+    "assessment_period": 4,
+    "risk_probability": 0.8471,
+    "priority": "Urgent",
+    "recommended_support": "Holistic Academic Coordinator Check-in: Calibrated risk (84.7%) exceeds the operational alert threshold (18%) with multiple academic signals. Recommend a collaborative teacher-student mentoring plan.",
+    "status": "Pending Review",
+    "teacher_notes": "",
+    "source": "rule_based_advisory",
+    "updated_at_utc": "2026-11-10T13:39:20.523400+00:00"
+  },
+  "STU_01062": {
+    "student_id": "STU_01062",
+    "assessment_period": 4,
+    "risk_probability": 0.847,
+    "priority": "Urgent",
+    "recommended_support": "Holistic Academic Coordinator Check-in: Calibrated risk (84.7%) exceeds the operational alert threshold (18%) with multiple academic signals. Recommend a collaborative teacher-student mentoring plan.",
+    "status": "Pending Review",
+    "teacher_notes": "",
+    "source": "rule_based_advisory",
+    "updated_at_utc": "2026-11-10T13:39:20.523400+00:00"
+  },
+  "STU_01592": {
+    "student_id": "STU_01592",
+    "assessment_period": 4,
+    "risk_probability": 0.8469,
+    "priority": "Urgent",
+    "recommended_support": "Holistic Academic Coordinator Check-in: Calibrated risk (84.7%) exceeds the operational alert threshold (18%) with multiple academic signals. Recommend a collaborative teacher-student mentoring plan.",
+    "status": "Pending Review",
+    "teacher_notes": "",
+    "source": "rule_based_advisory",
+    "updated_at_utc": "2026-11-10T13:39:20.523400+00:00"
+  },
+  "STU_00263": {
+    "student_id": "STU_00263",
+    "assessment_period": 4,
+    "risk_probability": 0.8467,
+    "priority": "Urgent",
+    "recommended_support": "Holistic Academic Coordinator Check-in: Calibrated risk (84.7%) exceeds the operational alert threshold (18%) with multiple academic signals. Recommend a collaborative teacher-student mentoring plan.",
+    "status": "Pending Review",
+    "teacher_notes": "",
+    "source": "rule_based_advisory",
+    "updated_at_utc": "2026-11-10T13:39:20.523400+00:00"
+  },
+  "STU_00862": {
+    "student_id": "STU_00862",
+    "assessment_period": 4,
+    "risk_probability": 0.8467,
+    "priority": "Urgent",
+    "recommended_support": "Holistic Academic Coordinator Check-in: Calibrated risk (84.7%) exceeds the operational alert threshold (18%) with multiple academic signals. Recommend a collaborative teacher-student mentoring plan.",
+    "status": "Pending Review",
+    "teacher_notes": "",
+    "source": "rule_based_advisory",
+    "updated_at_utc": "2026-11-10T13:39:20.523400+00:00"
+  },
+  "STU_00709": {
+    "student_id": "STU_00709",
+    "assessment_period": 4,
+    "risk_probability": 0.8466,
+    "priority": "Urgent",
+    "recommended_support": "Holistic Academic Coordinator Check-in: Calibrated risk (84.7%) exceeds the operational alert threshold (18%) with multiple academic signals. Recommend a collaborative teacher-student mentoring plan.",
+    "status": "Pending Review",
+    "teacher_notes": "",
+    "source": "rule_based_advisory",
+    "updated_at_utc": "2026-11-10T13:39:20.523400+00:00"
+  },
+  "STU_02244": {
+    "student_id": "STU_02244",
+    "assessment_period": 4,
+    "risk_probability": 0.8466,
+    "priority": "Urgent",
+    "recommended_support": "Holistic Academic Coordinator Check-in: Calibrated risk (84.7%) exceeds the operational alert threshold (18%) with multiple academic signals. Recommend a collaborative teacher-student mentoring plan.",
+    "status": "Pending Review",
+    "teacher_notes": "",
+    "source": "rule_based_advisory",
+    "updated_at_utc": "2026-11-10T13:39:20.523400+00:00"
+  },
+  "STU_00472": {
+    "student_id": "STU_00472",
+    "assessment_period": 4,
+    "risk_probability": 0.8466,
+    "priority": "Urgent",
+    "recommended_support": "Holistic Academic Coordinator Check-in: Calibrated risk (84.7%) exceeds the operational alert threshold (18%) with multiple academic signals. Recommend a collaborative teacher-student mentoring plan.",
+    "status": "Pending Review",
+    "teacher_notes": "",
+    "source": "rule_based_advisory",
+    "updated_at_utc": "2026-11-10T13:39:20.523400+00:00"
+  },
+  "STU_00569": {
+    "student_id": "STU_00569",
+    "assessment_period": 4,
+    "risk_probability": 0.8464,
+    "priority": "Urgent",
+    "recommended_support": "Holistic Academic Coordinator Check-in: Calibrated risk (84.6%) exceeds the operational alert threshold (18%) with multiple academic signals. Recommend a collaborative teacher-student mentoring plan.",
+    "status": "Pending Review",
+    "teacher_notes": "",
+    "source": "rule_based_advisory",
+    "updated_at_utc": "2026-11-10T13:39:20.523400+00:00"
+  },
+  "STU_00976": {
+    "student_id": "STU_00976",
+    "assessment_period": 4,
+    "risk_probability": 0.8463,
+    "priority": "Urgent",
+    "recommended_support": "Holistic Academic Coordinator Check-in: Calibrated risk (84.6%) exceeds the operational alert threshold (18%) with multiple academic signals. Recommend a collaborative teacher-student mentoring plan.",
+    "status": "Pending Review",
+    "teacher_notes": "",
+    "source": "rule_based_advisory",
+    "updated_at_utc": "2026-11-10T13:39:20.523400+00:00"
+  },
+  "STU_00636": {
+    "student_id": "STU_00636",
+    "assessment_period": 4,
+    "risk_probability": 0.8462,
+    "priority": "Urgent",
+    "recommended_support": "Holistic Academic Coordinator Check-in: Calibrated risk (84.6%) exceeds the operational alert threshold (18%) with multiple academic signals. Recommend a collaborative teacher-student mentoring plan.",
+    "status": "Pending Review",
+    "teacher_notes": "",
+    "source": "rule_based_advisory",
+    "updated_at_utc": "2026-11-10T13:39:20.523400+00:00"
+  }
+}

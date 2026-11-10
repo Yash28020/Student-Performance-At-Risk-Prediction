@@ -1,0 +1,47 @@
+name: EduGuard AI CI Suite
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11"]
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: 'pip'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Generate, Validate & Audit Synthetic Data
+        run: |
+          python -m src.data_generator --seed 42
+          python -m src.data_validation
+          python -m src.leakage_audit
+
+      - name: Train Baseline & Champion Models
+        env:
+          MPLCONFIGDIR: /tmp/matplotlib
+        run: |
+          python -m src.train
+
+      - name: Run Pytest Test Suite
+        env:
+          MPLCONFIGDIR: /tmp/matplotlib
+        run: |
+          pytest -v --tb=short tests/

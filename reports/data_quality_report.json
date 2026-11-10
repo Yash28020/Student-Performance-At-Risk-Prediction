@@ -1,0 +1,169 @@
+{
+  "generated_timestamp_utc": "2026-11-10T14:30:48.202983+00:00",
+  "source_path": "C:\\Users\\Admin\\Downloads\\ALGIONS AI LABS\\EduGuard-AI\\data\\raw\\student_performance.csv",
+  "overall_status": "PASS",
+  "total_records": 10000,
+  "unique_students": 2500,
+  "schema": {
+    "status": "PASS",
+    "columns_present": [
+      "student_id",
+      "assessment_period",
+      "attendance_pct",
+      "assignment_completion_pct",
+      "late_assignment_count",
+      "previous_score",
+      "previous_score_2",
+      "previous_score_avg",
+      "score_trend",
+      "next_assessment_score",
+      "at_risk"
+    ],
+    "total_columns": 11
+  },
+  "duplicates": {
+    "status": "PASS",
+    "duplicate_keys_count": 0
+  },
+  "ranges": {
+    "status": "PASS",
+    "violations": {},
+    "infinite_values_detected": 0
+  },
+  "derived_consistency": {
+    "status": "PASS",
+    "avg_mismatches": 0,
+    "trend_mismatches": 0,
+    "tolerance": 0.01
+  },
+  "temporal": {
+    "status": "PASS",
+    "valid_periods": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "missingness": {
+    "status": "PASS",
+    "missing_counts": {
+      "attendance_pct": 150,
+      "assignment_completion_pct": 201,
+      "late_assignment_count": 0,
+      "previous_score": 0,
+      "previous_score_2": 35,
+      "previous_score_avg": 0,
+      "score_trend": 0,
+      "assessment_period": 0
+    },
+    "missing_percentages": {
+      "attendance_pct": 1.5,
+      "assignment_completion_pct": 2.01,
+      "late_assignment_count": 0.0,
+      "previous_score": 0.0,
+      "previous_score_2": 0.35,
+      "previous_score_avg": 0.0,
+      "score_trend": 0.0,
+      "assessment_period": 0.0
+    }
+  },
+  "target": {
+    "status": "PASS",
+    "at_risk_ratio": 0.1954,
+    "class_distribution": {
+      "0": 8046,
+      "1": 1954
+    },
+    "per_period_at_risk_rate": {
+      "period_1": 0.1892,
+      "period_2": 0.2432,
+      "period_3": 0.1916,
+      "period_4": 0.1576
+    },
+    "target_threshold_mismatches": 0
+  },
+  "feature_statistics": {
+    "attendance_pct": {
+      "count": 9850,
+      "missing": 150,
+      "mean": 58.569,
+      "std": 20.582,
+      "min": 5.0,
+      "median": 59.365,
+      "max": 100.0
+    },
+    "assignment_completion_pct": {
+      "count": 9799,
+      "missing": 201,
+      "mean": 58.486,
+      "std": 20.731,
+      "min": 0.0,
+      "median": 59.33,
+      "max": 100.0
+    },
+    "late_assignment_count": {
+      "count": 10000,
+      "missing": 0,
+      "mean": 2.08,
+      "std": 1.752,
+      "min": 0.0,
+      "median": 2.0,
+      "max": 12.0
+    },
+    "previous_score": {
+      "count": 10000,
+      "missing": 0,
+      "mean": 54.202,
+      "std": 16.637,
+      "min": 0.0,
+      "median": 54.1,
+      "max": 100.0
+    },
+    "previous_score_2": {
+      "count": 9965,
+      "missing": 35,
+      "mean": 54.316,
+      "std": 16.514,
+      "min": 0.0,
+      "median": 54.2,
+      "max": 100.0
+    },
+    "previous_score_avg": {
+      "count": 10000,
+      "missing": 0,
+      "mean": 54.267,
+      "std": 16.007,
+      "min": 0.0,
+      "median": 54.24,
+      "max": 100.0
+    },
+    "score_trend": {
+      "count": 10000,
+      "missing": 0,
+      "mean": -0.131,
+      "std": 8.604,
+      "min": -61.71,
+      "median": -0.27,
+      "max": 63.57
+    },
+    "assessment_period": {
+      "count": 10000,
+      "missing": 0,
+      "mean": 2.5,
+      "std": 1.118,
+      "min": 1.0,
+      "median": 2.5,
+      "max": 4.0
+    },
+    "next_assessment_score": {
+      "count": 10000,
+      "missing": 0,
+      "mean": 54.235,
+      "std": 16.668,
+      "min": 0.0,
+      "median": 54.065,
+      "max": 100.0
+    }
+  }
+}
