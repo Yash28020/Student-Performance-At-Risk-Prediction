@@ -1,4 +1,4 @@
-# EduGuard AI
+# Education-Guard AI
 ### Academic Intelligence & Early Warning Platform
 **Tagline:** *Detect Early. Understand Deeply. Support Intelligently.*
 
@@ -38,7 +38,7 @@
 ---
 
 ## 1. Project Overview
-**EduGuard AI** is a reproducible, advisory machine learning platform built to help school teachers and academic coordinators identify students who may benefit from timely academic support before an upcoming assessment takes place.
+**Education-Guard AI** is a reproducible, advisory machine learning platform built to help school teachers and academic coordinators identify students who may benefit from timely academic support before an upcoming assessment takes place.
 
 Trained solely on simulated longitudinal pre-assessment classroom indicators (`seed=42`, `2,500` school students, `10,000` prediction snapshots), EduGuard AI provides calibrated risk probabilities, game-theoretic `TreeExplainer` SHAP attributions, persisted teacher intervention tracking, downloadable CSV cohort reports, and an immersive Six-World React interface backed by FastAPI.
 
